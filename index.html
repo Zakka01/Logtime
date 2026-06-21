@@ -34,7 +34,7 @@
         class="bg-transparent h-full w-full rounded-3xl flex items-center flex-col gap-6"
       >
           <!-- Top one -->
-        <div class="flex-7 bg-white w-full rounded-3xl px-8 py-10">
+        <div class="h-[50%] bg-white w-full rounded-3xl px-8 py-14">
           <div class="space-y-4">
             <!-- titles -->
             <div>
@@ -47,13 +47,19 @@
             <!-- circles -->
             <div
               id="circles"
-              class="flex flex-wrap space-x-1 space-y-1 [&>div]:rounded-full [&>div]:size-10">
+              class="flex flex-wrap space-x-2 space-y-2 [&>div]:rounded-full [&>div]:size-12">
             </div>
           </div>
         </div>
 
         <!-- Bottom One -->
-        <div id="daily-goal" class="flex-3 h-[30%] w-full bg-lime-300 rounded-3xl"></div>
+        <div id="daily-goal" class="h-[20%] w-full bg-lime-300 rounded-3xl flex-col gap-3 py-8 px-15">
+            <span>
+                <p class="text-xl font-medium">
+                    1 more hour needed for today
+                </p>
+            </span>
+        </div>
       </div>
       <script type="module" src="script.js"></script>
     </div>
