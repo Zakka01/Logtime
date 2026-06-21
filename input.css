@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+#pace-msg-below {
+  @apply text-red-800 font-semibold
+}
+
+
+#pace-msg-above {
+  @apply text-green-800 font-semibold
+}
+
+
+
+#circles > .gray {
+  @apply bg-stone-400
+}
+
+/* green */ 
+
+#circles > .circle-green-done {
+  @apply bg-green-800
+}
+
+#circles > .circle-green-over {
+  background: repeating-linear-gradient(
+	-45deg,
+	/* small strip color */
+    oklch(44.8% 0.119 151.328),
+    oklch(44.8% 0.119 151.328) 4px,
+	/* big strip color */ 
+    oklch(79.2% 0.209 151.711) 4px,
+    oklch(79.2% 0.209 151.711) 10px
+  );
+}
+
+
+/* red */
+
+#circles > .circle-red-done {
+  @apply bg-red-800
+}
+
+#circles > .circle-red-pending {
+  background: repeating-linear-gradient(
+	-45deg,
+	/* small strip color red-800 */
+    oklch(44.4% 0.177 26.899),
+    oklch(44.4% 0.177 26.899) 4px,
+	/* big strip color red-400 */ 
+    oklch(70.4% 0.191 22.216) 4px,
+    oklch(70.4% 0.191 22.216) 10px
+  );
+}
+

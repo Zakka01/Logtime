@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <title>1337 Logtime</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="out.css" />
+    <!-- <link rel="icon" href="favicon.png"> -->
+  </head>
+
+  <body
+    class="min-h-full h-full w-full bg-[#101010] overflow-hidden px-8 py-8 pt-2 space-y-4 flex flex-col"
+  >
+    <nav class="w-full px-8 text-white h-fit flex justify-between block">
+      <span id="login" class="cursor-pointer">user not found</span>
+      <span id="month">Month</span>
+    </nav>
+
+    <!-- cards -->
+    <div class="h-full w-full grid grid-rows-1 grid-cols-2 gap-x-6">
+      <!-- hours card -->
+      <div
+        id="count-bg"
+        class="h-full rounded-3xl flex items-center justify-center"
+      >
+        <h1 class="text-[12rem] font-bold text-white">
+          <span id="current-hours">18</span>h
+        </h1>
+      </div>
+
+      <!-- days card -->
+      <div
+        class="bg-transparent h-full w-full rounded-3xl flex items-center flex-col gap-6"
+      >
+          <!-- Top one -->
+        <div class="flex-7 bg-white w-full rounded-3xl px-8 py-10">
+          <div class="space-y-4">
+            <!-- titles -->
+            <div>
+              <h3 class="text-stone-400 text-xs font-semibold">
+                Road to
+                <span id="target-hours">120</span>h
+              </h3>
+              <h2 id="pace-title"></h2>
+            </div>
+            <!-- circles -->
+            <div
+              id="circles"
+              class="flex flex-wrap space-x-1 space-y-1 [&>div]:rounded-full [&>div]:size-10">
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom One -->
+        <div id="daily-goal" class="flex-3 h-[30%] w-full bg-lime-300 rounded-3xl"></div>
+      </div>
+      <script type="module" src="script.js"></script>
+    </div>
+  </body>
+</html>
